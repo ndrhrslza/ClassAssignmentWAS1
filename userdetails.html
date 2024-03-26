@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang en>
+<head>
+    <meta charset="UTF-8">
+    <title>User Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>a. Student Details</h1>
+
+    <form method = "post" action = "userdetails.html">
+        <label for = "name">Name (Legal/Official):</label>
+        <input type = "text" id = "name" name = "name" pattern= "[A-Za-z\s]+" required><br><br>
+        <label for = "matricno">Matric No:</label>
+        <input type = "int" id = "matricno" name = "matricno" pattern= "[0-9]+" required><br><br>
+        <label for = "NewAddress">Current Address:</label>
+        <textarea id = "newaddress"  rows= "8" name = "newaddress" pattern= "[A-Za-z\s]+" required></textarea><br></br>
+        <label for = "HomeAddress">Home Address:</label>
+        <textarea id = "homeaddress"  rows= "8" name = "homeaddress" pattern= "[A-Za-z\s]+" ></textarea><br></br>
+        <label for = "email">Email (Gmail Address):</label>
+        <input type = "email" id = "email" name = "email" required><br><br>
+        <label for = "phone">Mobile Phone No:</label>
+        <input type = "tel" id = "phone" name = "phone" pattern= "[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        <label for = "homephone">Home Phone No (Emergency):</label>
+        <input type = "tel" id = "homephone" name = "homephone" pattern= "[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+        <input type = "submit" value = "Submit">
+    </form>
+
+    <script src="userdetails.js"></script>
+    
+    </body>
+</html>
